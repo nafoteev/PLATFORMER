@@ -6,7 +6,9 @@
 radius = 55.1857
 height = 154.591
 
-[node name="player" type="KinematicBody2D"]
+[node name="player" type="KinematicBody2D" groups=[
+"player",
+]]
 
 [node name="player" type="Sprite" parent="."]
 scale = Vector2( 0.25, 0.25 )
@@ -14,5 +16,17 @@ texture = ExtResource( 1 )
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -10.5411, 20.4611 )
+position = Vector2( -7.17751, 23.8247 )
 shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Label" type="Label" parent="Camera2D"]
+margin_left = 341.0
+margin_top = -198.0
+margin_right = 343.0
+margin_bottom = -184.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
