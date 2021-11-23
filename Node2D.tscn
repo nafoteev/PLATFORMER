@@ -1,17 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://player.gd" type="Script" id=2]
+[ext_resource path="res://Dver.tscn" type="PackedScene" id=2]
 [ext_resource path="res://platform.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Manager.gd" type="Script" id=4]
 [ext_resource path="res://ключ.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Node2D2.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
 
 [node name="player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 299.374, 269.368 )
-script = ExtResource( 2 )
 
 [node name="staticBody6" parent="." instance=ExtResource( 3 )]
 position = Vector2( 913.741, 325.507 )
@@ -237,3 +237,7 @@ position = Vector2( 2413.97, 679.128 )
 
 [node name="ключ2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3148.95, 1507.43 )
+
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7257.43, 1113.98 )
+next_level = ExtResource( 6 )

@@ -1,0 +1,178 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://platform.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ключ.tscn" type="PackedScene" id=2]
+[ext_resource path="res://player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Manager.gd" type="Script" id=4]
+[ext_resource path="res://Dver.tscn" type="PackedScene" id=5]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 422.358, 170.896 )
+
+[node name="staticBody" parent="." instance=ExtResource( 1 )]
+position = Vector2( 410.372, 428.605 )
+
+[node name="staticBody2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 620.135, 428.605 )
+
+[node name="staticBody3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 206.602, 611.398 )
+
+[node name="staticBody4" parent="." instance=ExtResource( 1 )]
+position = Vector2( -3.35645, 613.197 )
+
+[node name="staticBody5" parent="." instance=ExtResource( 1 )]
+position = Vector2( -212.893, 613.197 )
+
+[node name="staticBody" parent="staticBody5" instance=ExtResource( 1 )]
+position = Vector2( -311.131, 568.289 )
+
+[node name="staticBody" parent="staticBody5/staticBody" instance=ExtResource( 1 )]
+position = Vector2( -204.433, -1.98792 )
+
+[node name="staticBody" parent="staticBody5/staticBody/staticBody" instance=ExtResource( 1 )]
+position = Vector2( -216.706, 0 )
+
+[node name="staticBody2" parent="staticBody5/staticBody/staticBody" instance=ExtResource( 1 )]
+position = Vector2( 1557.26, -927.302 )
+
+[node name="staticBody3" parent="staticBody5/staticBody/staticBody" instance=ExtResource( 1 )]
+position = Vector2( 1773.97, -927.302 )
+
+[node name="staticBody" parent="staticBody5/staticBody/staticBody/staticBody3" instance=ExtResource( 1 )]
+position = Vector2( 403.175, -5.03967 )
+
+[node name="staticBody2" parent="staticBody5/staticBody/staticBody/staticBody3" instance=ExtResource( 1 )]
+position = Vector2( 612.934, -5.03967 )
+
+[node name="staticBody" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 537.169, 479.562 )
+
+[node name="staticBody2" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 746.932, 479.562 )
+
+[node name="staticBody3" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 327.406, 479.562 )
+
+[node name="staticBody4" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 956.695, 479.562 )
+
+[node name="staticBody5" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 1244.37, 1006.97 )
+
+[node name="staticBody6" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 1430.16, 269.799 )
+
+[node name="staticBody7" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 1633.93, 269.799 )
+
+[node name="staticBody8" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 1837.7, 269.799 )
+
+[node name="staticBody9" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 1028.61, 1186.76 )
+
+[node name="staticBody10" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 3.77148, 185.894 )
+
+[node name="staticBody11" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 800.871, 1642.25 )
+
+[node name="staticBody12" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( 597.101, 1642.25 )
+
+[node name="staticBody" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12" instance=ExtResource( 1 )]
+position = Vector2( -209.763, 0 )
+
+[node name="staticBody2" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12" instance=ExtResource( 1 )]
+position = Vector2( -2519.9, -150.156 )
+
+[node name="staticBody3" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12" instance=ExtResource( 1 )]
+position = Vector2( -2306.33, -150.156 )
+
+[node name="staticBody4" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12" instance=ExtResource( 1 )]
+position = Vector2( -2776.19, 469.209 )
+
+[node name="staticBody5" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12" instance=ExtResource( 1 )]
+position = Vector2( -2979.09, 469.209 )
+
+[node name="staticBody6" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12" instance=ExtResource( 1 )]
+position = Vector2( -3191.86, 464.478 )
+
+[node name="staticBody7" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12" instance=ExtResource( 1 )]
+position = Vector2( -3403.29, 464.478 )
+
+[node name="staticBody8" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12" instance=ExtResource( 1 )]
+position = Vector2( -3622.27, 305.907 )
+
+[node name="staticBody9" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12" instance=ExtResource( 1 )]
+position = Vector2( -3848.8, 139.786 )
+
+[node name="staticBody" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( -7.55103, -181.224 )
+
+[node name="staticBody2" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( -7.55103, -362.448 )
+
+[node name="staticBody3" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( 0, -543.672 )
+
+[node name="staticBody4" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( 0, -724.896 )
+
+[node name="staticBody5" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( 0, -906.12 )
+
+[node name="staticBody6" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( 0, -1087.34 )
+
+[node name="staticBody7" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( 0, -1268.57 )
+
+[node name="staticBody8" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( 3360.04, 608.458 )
+
+[node name="staticBody" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8" instance=ExtResource( 1 )]
+position = Vector2( -2080.46, -285.905 )
+
+[node name="staticBody2" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8" instance=ExtResource( 1 )]
+position = Vector2( -654.304, -3.36377 )
+
+[node name="staticBody" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( -443.993, 0 )
+
+[node name="staticBody2" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( -1210.89, -282.541 )
+
+[node name="staticBody3" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( -713.32, 971.118 )
+
+[node name="staticBody4" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( -916.737, 971.118 )
+
+[node name="staticBody5" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8/staticBody2" instance=ExtResource( 1 )]
+position = Vector2( -1137.11, 971.118 )
+
+[node name="ключ" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8/staticBody2" instance=ExtResource( 2 )]
+position = Vector2( 2434.5, -2413.79 )
+
+[node name="Dver" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8/staticBody2/ключ" instance=ExtResource( 5 )]
+position = Vector2( -3358.54, 3182.93 )
+
+[node name="ключ2" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8/staticBody2" instance=ExtResource( 2 )]
+position = Vector2( -2696.31, -2090.81 )
+
+[node name="ключ3" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8/staticBody2" instance=ExtResource( 2 )]
+position = Vector2( -2492.24, -705.37 )
+
+[node name="staticBody3" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody8" instance=ExtResource( 1 )]
+position = Vector2( -883.028, -3.36377 )
+
+[node name="staticBody9" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( 3145.44, 608.458 )
+
+[node name="staticBody" parent="staticBody5/staticBody/staticBody/staticBody3/staticBody2/staticBody12/staticBody9/staticBody9" instance=ExtResource( 1 )]
+position = Vector2( -224, 0 )

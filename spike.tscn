@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://spike.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Area2D
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+func _on__body_entered(body):
+	pass # Replace with function body.
+	if body.is_in_group(\"player\"):
+		get_tree().change_scene_to($\"/root/Global\".checpoint)
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[node name="spike" type="Area2D"]
+position = Vector2( 2.24487, 4.48987 )
+script = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 44.7141, 13.0297, 76.143, 78.1324, 13.2851, 73.6426 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 46.7722, 48.9994 )
+scale = Vector2( 3.83974, 3.89542 )
+texture = ExtResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on__body_entered"]

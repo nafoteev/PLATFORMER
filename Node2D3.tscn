@@ -1,0 +1,153 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://platform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ключ.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Manager.gd" type="Script" id=4]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 365.871, 154.56 )
+
+[node name="staticBody" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -220.705, 290.527 )
+
+[node name="staticBody2" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -9.27661, 290.527 )
+
+[node name="staticBody3" parent="player" instance=ExtResource( 2 )]
+position = Vector2( 443.783, 101.752 )
+
+[node name="staticBody4" parent="player" instance=ExtResource( 2 )]
+position = Vector2( 655.211, 101.752 )
+
+[node name="staticBody5" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -545.397, 79.0993 )
+
+[node name="staticBody6" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -764.376, 79.0993 )
+
+[node name="staticBody7" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -983.355, 79.0993 )
+
+[node name="staticBody8" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -1338.25, -94.5735 )
+
+[node name="staticBody9" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -1549.68, -94.5735 )
+
+[node name="staticBody10" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -1753.56, -102.125 )
+
+[node name="staticBody11" parent="player" instance=ExtResource( 2 )]
+position = Vector2( 1074.39, -109.676 )
+
+[node name="staticBody" parent="player/staticBody11" instance=ExtResource( 2 )]
+position = Vector2( 10.1563, 406.106 )
+
+[node name="staticBody2" parent="player/staticBody11" instance=ExtResource( 2 )]
+position = Vector2( 225.669, 567.741 )
+
+[node name="staticBody3" parent="player/staticBody11" instance=ExtResource( 2 )]
+position = Vector2( 432.202, 576.72 )
+
+[node name="ключ" parent="player/staticBody11/staticBody3" instance=ExtResource( 3 )]
+position = Vector2( 844.091, -197.553 )
+
+[node name="staticBody12" parent="player" instance=ExtResource( 2 )]
+position = Vector2( 1213.98, -109.676 )
+
+[node name="staticBody13" parent="player" instance=ExtResource( 2 )]
+position = Vector2( 1425.41, -117.227 )
+
+[node name="staticBody14" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -2022.65, 927.268 )
+
+[node name="staticBody15" parent="player" instance=ExtResource( 2 )]
+position = Vector2( -2238.16, 923.945 )
+
+[node name="staticBody" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -212.582, -6.86841 )
+
+[node name="staticBody2" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -421.885, -6.86841 )
+
+[node name="staticBody3" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -631.189, -12.5254 )
+
+[node name="staticBody4" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( 53.2905, -1217.44 )
+
+[node name="staticBody5" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -164.832, -1222.33 )
+
+[node name="staticBody6" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -431.935, -1464.24 )
+
+[node name="staticBody7" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -648.642, -1464.24 )
+
+[node name="staticBody8" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -847.338, -191.331 )
+
+[node name="staticBody9" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1056.64, -361.037 )
+
+[node name="staticBody10" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1265.94, -536.399 )
+
+[node name="staticBody11" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1469.59, -706.105 )
+
+[node name="staticBody12" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1682.48, -876.305 )
+
+[node name="staticBody13" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1897.44, -1040.35 )
+
+[node name="staticBody14" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -858.302, -1467.38 )
+
+[node name="staticBody15" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1067.84, -1473.73 )
+
+[node name="staticBody16" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1271.03, -1473.73 )
+
+[node name="staticBody17" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1474.21, -1480.08 )
+
+[node name="staticBody18" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1677.4, -1553.03 )
+
+[node name="staticBody" parent="player/staticBody15/staticBody18" instance=ExtResource( 2 )]
+position = Vector2( -426.914, 513.077 )
+
+[node name="staticBody2" parent="player/staticBody15/staticBody18" instance=ExtResource( 2 )]
+position = Vector2( -631.011, 338.695 )
+
+[node name="staticBody3" parent="player/staticBody15/staticBody18" instance=ExtResource( 2 )]
+position = Vector2( -748.477, 157.157 )
+
+[node name="ключ" parent="player/staticBody15/staticBody18" instance=ExtResource( 3 )]
+position = Vector2( 1899.85, 1395.89 )
+
+[node name="staticBody4" parent="player/staticBody15/staticBody18" instance=ExtResource( 2 )]
+position = Vector2( 5556.85, 332.854 )
+
+[node name="staticBody5" parent="player/staticBody15/staticBody18" instance=ExtResource( 2 )]
+position = Vector2( 5862.16, 1078.17 )
+
+[node name="staticBody6" parent="player/staticBody15/staticBody18" instance=ExtResource( 2 )]
+position = Vector2( 6068.7, 1078.17 )
+
+[node name="staticBody7" parent="player/staticBody15/staticBody18" instance=ExtResource( 2 )]
+position = Vector2( 6275.23, 1078.17 )
+
+[node name="staticBody8" parent="player/staticBody15/staticBody18" instance=ExtResource( 2 )]
+position = Vector2( 4784.6, 925.515 )
+
+[node name="staticBody19" parent="player/staticBody15" instance=ExtResource( 2 )]
+position = Vector2( -1890.26, -1548.93 )
